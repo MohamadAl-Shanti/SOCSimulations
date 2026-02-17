@@ -1,3 +1,12 @@
+This applies to a very simple and specific form of serverless application (S3 hosted front end, and API-Gateway communicating with backend)
+
 1. If using and monitoring AWS API-Gateway, configure a new IAM policy to allow CloudFront to collect logs from the API-gateway. 
    An account must be configured with "iam:CreatePolicy" to configure IAM policies. See related AWS user account provisioning documentation.
-2. 
+2. Configure API-Gateway for CloudWatch log collection.
+3. Configure S3 bucket for CloudWatch collection: Create separate log bucket. Will be used for forwarding to Splunk.
+4. Download Splunk Addon for AWS from Splunk Enterprise.
+5. Configure new IAM role for Splunk log forwarding ex/ splunk-soc-service (read-only).
+6. Very upsettingly complicated process of configuring aws cloudwatch and s3log inputs on Splunk Enterprise.
+
+
+
