@@ -6,7 +6,10 @@ This applies to a very simple and specific form of serverless application (S3 ho
 3. Configure S3 bucket for CloudWatch collection: Create separate log bucket. Will be used for forwarding to Splunk.
 4. Download Splunk Addon for AWS from Splunk Enterprise.
 5. Configure new IAM role for Splunk log forwarding ex/ splunk-soc-service (read-only).
-6. Very upsettingly complicated process of configuring aws cloudwatch and s3log inputs on Splunk Enterprise.
+6. Configure aws cloudwatch and s3log inputs on Splunk Enterprise. Will include video demo at some point hopefully.
+7. Use following splunk query to ensure your logs are being successfully forwarded:
+   
+
 
 
 
